@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS' ,sans-serif;
+}
+body{
+    display: flex;
+    min-height: 100vh;
+    background: url(backgroundimage.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+header{
+    border: 1px solid #fff5ee;
+    background-color: #fff5ee;
+    border-width: 100%;
+    width: 100%;
+    height: 60px;
+    padding-top: 30px;
+    padding-left: 10px;
+    position: fixed;
+   
+}
+
+.inline{
+    display: inline-block;
+}
+
+.one{
+    margin-left: 700px;
+    font-size: 25px;
+}
+a{
+    padding-left: 10px;
+    text-decoration: none;
+    color: black;
+}
+.one a:hover{
+    color: rgb(207, 212, 216);
+    transition: 0.3s;
+}
+.web{
+   
+    color:black;
+    font-size: 30px;
+    padding-left: 100px;
+   
+}
+.web1{
+    display: inline-block;
+}
+.content{
+    color: black;
+    font-size: 50px;
+    font-weight: 600;
+    padding-top: 400px;
+    padding-left: 100px;
+}
+button{
+    background: transparent;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 100px;
+    border-width: 2px;
+    width: 200px;
+    height: 40px;
+    color: black;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+.link{
+    margin-left: 110px;
+    margin-top: 10px;
+}
+.link a{
+    font-size: 48px;
+    color: black;
+}
+.image{
+    width: 700px;
+    height: 700px;
+   
+    margin-top: 200px;
+    margin-left: 300px;
+    background: url(splash.png);
+    background-size: contain;
+    z-index: -1;
+}
+.image1{
+    width: 400px;
+    height: 600px;
+    
+    margin-top: 100px;
+    margin-left: 1150px;
+    margin-bottom: 800px;
+    background: url(myimage.png);
+    background-size: cover;
+    position:absolute;
+}
+button:hover{
+    background-color: #fff5ee;
+    transition: 0.3s;
+}
+.link a:hover{
+ color: #fff5ee;
+ transition: 0.3s;
+}
