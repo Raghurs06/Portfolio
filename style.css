@@ -82,7 +82,7 @@ button{
    
     margin-top: 200px;
     margin-left: 300px;
-    background: url(splash.png);
+    background: url(splash.png)no-repeat;
     background-size: contain;
     z-index: -1;
 }
