@@ -103,23 +103,29 @@ button{
     left: 900px;
     top: 0px;
 }
-button:hover{
-    background-color: #fff5ee;
+button a:hover{
+    background-color: black;
     transition: 0.3s;
+    color: #fff5ee;
+}
+button:hover{
+    background-color: black;
+    z-index: -10;
 }
 .link a:hover{
  color: #fff5ee;
  transition: 0.3s;
 }
+
 .about{
-    margin-top: 100px;
+    margin-top: 30px;
     width: 1300px;
     margin-left: 10px;
     font-weight: 600;
     font-size: 25px;
 }
 .about h1{
-    margin-top: 80px;
+    margin-top: 30px;
     margin-bottom: 30px;
     font-size: 30px;
 }
@@ -160,6 +166,15 @@ button:hover{
     font-weight: 500;
     font-size: 20px;
 }
+.puc{
+    height: 300px;
+    width: 399px;
+    border: 2px solid #fff5ee;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: url(puc.jpg)no-repeat;
+    background-size: cover;
+}
 .college-box{
     height: 500px;
     width: 400px;
@@ -168,4 +183,142 @@ button:hover{
     background-color: #fff5ee;
     font-weight: 500;
     font-size: 20px;
+}
+.college{
+    height: 200px;
+    width: 399px;
+    border: 2px solid #fff5ee;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: url(college2.jpg)no-repeat;
+    background-size: contain;
+}
+#skills {
+    margin-left: 10px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    font-size: 35px;
+    font-weight: 700;
+}
+.skills{
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.skill{
+    display: flex;
+    height: 60px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.skillcontainer{
+    height: 10px;
+    width: 800px;
+    border: 2px solid #fff5ee;
+}
+.html{
+    height: 9px;
+    width: 80%;
+    background-color: rgb(172, 17, 81);
+}
+.skillcontainer1{
+    height: 10px;
+    width: 800px;
+    border: 2px solid #fff5ee;
+    margin-left: 22px;
+}
+.css{
+    height: 9px;
+    width: 70%;
+    background-color: rgb(172, 17, 81);
+}
+.skillcontainer2{
+    height: 10px;
+    width: 800px;
+    border: 2px solid #fff5ee;
+    margin-right: 15px;
+}
+.js{
+    height: 9px;
+    width: 50%;
+    background-color: rgb(172, 17, 81);
+}
+.skillcontainer3{
+    height: 10px;
+    width: 800px;
+    border: 2px solid #fff5ee;
+    margin-left: 12px;
+}
+.java{
+    height: 9px;
+    width: 60%;
+    background-color: rgb(172, 17, 81);
+}
+.skillcontainer4{
+    height: 10px;
+    width: 800px;
+    border: 2px solid #fff5ee;
+    margin-left: 43px;
+}
+.c{
+    height: 9px;
+    width: 60%;
+    background-color: rgb(172, 17, 81);
+}
+.skillcontainer5{
+    height: 10px;
+    width: 800px;
+    border: 2px solid #fff5ee;
+    margin-left: 22px;
+}
+.sql{
+    height: 9px;
+    width: 70%;
+    background-color: rgb(172, 17, 81);
+}
+.projects{
+    margin-left: 10px;
+    margin-top: 80px;
+}
+.project{
+    display: flex;
+    margin-top: 40px;
+    margin-left: 150px;
+    height: 250px;
+    width: 1000px;
+    border: 2px solid #fff5ee;
+    border-radius: 10px;
+    background-color: #fff5ee;
+    
+}
+.psr{
+    height: 249px;
+    width: 40%;
+    border: 2px solid black;
+    border-radius: 10px;
+    background: url(psr.jpg)no-repeat;
+    background-size: cover;
+}
+.project p{
+    width: 800px;
+    font-weight: 600;
+    font-size: 20px;
+    margin-left: 20px;
+}
+.amazon{
+    height: 249px;
+    width: 40%;
+    border: 2px solid black;
+    border-radius: 10px;
+    background: url(amazon.png)no-repeat;
+    background-size: cover;
+}
+
+.chrome{
+    height: 249px;
+    width: 40%;
+    border: 2px solid black;
+    border-radius: 10px;
+    background: url(googlechrome.png)no-repeat;
+    background-size: cover;
 }
