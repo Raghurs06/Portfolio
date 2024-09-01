@@ -322,3 +322,15 @@ button:hover{
     background: url(googlechrome.png)no-repeat;
     background-size: cover;
 }
+.contact{
+    margin-top: 80px;
+    margin-left: 10px;
+}
+.contact-link{
+    height: 50px;
+    width: 400px;
+    margin-left: 500px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    font-size: 50px;
+}
