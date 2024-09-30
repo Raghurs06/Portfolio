@@ -3,18 +3,21 @@
     padding: 0;
     font-family: 'Trebuchet MS' ,sans-serif;
 }
-body{
+body .bg-image{
+    position: fixed;
+    background-image: url(backgroundimage.jpg);
     width: 100%;
     min-height: 100vh;
-    background: url(backgroundimage.jpg)no-repeat;
+    z-index: -100;
+    top: 0;
     background-size: cover;
 }
 header{
     border: 1px solid #fff5ee;
     background-color: #fff5ee;
     border-width: 100%;
-    width: 100%;
-    height: 70px;
+    width: 100vw;
+    height: 13vh;
     position: fixed;
     z-index: 1000;
     top: 0px;
@@ -25,14 +28,16 @@ header{
     padding-top: 15px;
 }
 .name{
-    width: 400px;
-    margin-left: 20px;
+    font-size: 2rem;
+    position: fixed;
+    width: 70vw;
+    margin-left: 20px;    
 }
 
 .one{
-    margin-left: 300px;
+    margin-left: 55vw;
     font-size: 25px;
-    width: 600px;
+    width: 600px;    
 }
 a{
     padding-left: 10px;
@@ -47,7 +52,7 @@ a{
    
     color:black;
     font-size: 30px;
-    padding-left: 100px;
+    padding-left: 7vw;
 }
 .web1{  
     display: flex;
@@ -65,13 +70,13 @@ span{
     font-size: 50px;
     font-weight: 600;
     margin-top: 200px;
-    padding-left: 100px;
+    padding-left: 7vw;
 }
 button{
     background: transparent;
     font-size: 20px;
     font-weight: 600;
-    margin-left: 100px;
+    margin-left: 7vw;
     border-width: 2px;
     width: 200px;
     height: 40px;
@@ -81,7 +86,7 @@ button{
     
 }
 .link{
-    margin-left: 110px;
+    margin-left: 6vw;
     margin-top: 10px;
 }
 .link a{
@@ -120,24 +125,29 @@ button:hover{
  color: #fff5ee;
  transition: 0.3s;
 }
-
+#about{
+    font-size: 30px;
+    font-weight: 600;
+}
 .about{
     margin-top: 30px;
     width: 1300px;
     margin-left: 10px;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 25px;
 }
-.about h1{
+.about p{
     margin-top: 30px;
     margin-bottom: 30px;
-    font-size: 30px;
+    font-size: 25px;
 }
 #education{
     margin-top: 80px;
     margin-left: 10px;
+    font-size: 30px;
+    font-weight: 700;
 }
-.education{
+.education-container{
     display: flex;
     margin-top: 30px;
     margin-left: 10px;
@@ -179,6 +189,10 @@ button:hover{
     background: url(college2.jpg)no-repeat;
     background-size: contain;
 }
+#college {
+    margin-top: 27.5vh;
+}
+
 #skills {
     margin-left: 10px;
     margin-top: 80px;
@@ -187,14 +201,15 @@ button:hover{
     font-weight: 700;
 }
 .skills{
-    margin-left: 20px;
-    font-size: 20px;
+    margin-left: 50px;
+    font-size: 1.5rem;
     font-weight: 700;
 }
 .skill{
     display: flex;
-    height: 60px;
-    justify-content: space-evenly;
+    height: 70px;
+    width: 90vw;
+    justify-content: space-between;
     align-items: center;
 }
 .skillcontainer{
@@ -240,7 +255,7 @@ button:hover{
     height: 10px;
     width: 800px;
     border: 2px solid #fff5ee;
-    margin-right: 15px;
+    margin-right: 40px;
     .js{
         height: 9px;
         width: 50%;
@@ -315,6 +330,10 @@ button:hover{
     .sql{
         height: 11px;
     }
+}
+#projects{
+    font-weight: 900;
+    font-size: 30px;
 }
 .projects{
     margin-left: 10px;
@@ -399,6 +418,10 @@ button:hover{
     margin-top: 80px;
     margin-left: 10px;
 }
+#contact{
+    font-size: 35px; 
+    font-weight: 700;
+}
 .contact-link{
     height: 50px;
     width: 400px;
@@ -426,6 +449,332 @@ footer{
     background: url(idea.png)no-repeat;
     background-size: contain;
     height: 30px;
+
     width: 30px;
     margin-left: 8px;
+}
+
+/* for responsive design */
+
+@media (max-width: 700px) {
+    .hideOnMobile{
+        display: none;
+    }
+    .showOnMobile{
+        display: block;
+    }
+    .two{
+        display: none;
+    }
+    .name{
+        font-size: 1rem;
+        width: 50vw;
+        top: 2vh;
+    }
+    .menu-icon{
+        position: absolute;        
+        top: 1.2vh;
+        left: 83vw;
+    }
+    header{
+        height: 7vh;
+        width: 100vw;
+    }
+    .container{
+        margin-top: 48vh;
+        height: 24vh;
+        border: 2px solid red;
+        width: 88vw;
+    }
+    .content{
+        margin-top: 0vh;
+        font-size: 1rem;
+        border: 2px solid red;
+    }
+    .web2{
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    button{
+        height: 3vh;
+        width: 25vw;
+        font-size: 0.8rem;
+        margin-top: 1vh;        
+    }
+    .link a{
+        font-size: 2rem;
+        margin-top: 0vh;
+    }
+    .image{
+        border: 2px solid red;
+        top: 35vh;
+        left: 13vw;
+        height: 13vh;
+        width: 70vw;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .image1{
+        border: 2px solid red;
+        left: 20vw;
+        height: 40vh;
+        top: 0vh;
+        width: 70vw;
+    }
+    #about{
+        font-size: 1.2rem;
+    }
+    .about{
+        margin-top: 0vh;
+        width: 90vw;
+        border: 2px solid red;
+    }
+    .about p{
+        margin-top: 0vh;
+        font-size: 0.9rem;
+    }
+    .education-container{
+        display: none;
+    }
+    #education{
+        font-size: 1rem;
+        margin-bottom: 2vh;
+    }
+    .slider-wrapper{
+        overflow: hidden;
+        max-width: 1200px;
+        margin: 0 79px 55px;
+    }
+    .card-list .card-item{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 56vw;
+        height: 35vh;
+        font-size: 0.8rem;
+        border-radius: 0.5rem;
+        background-color: #fff5ee;
+        p{
+            padding-left: 1vw;
+        }
+        button{
+            position: absolute;            
+            top: 30vh;
+            left: 2vw;
+            font-size: 0.7rem;
+        }
+    }
+    .card-list .card-item .school-image{
+        width: 55vw;
+        height: 20vh;
+        margin-left: 0.5vw;
+        margin-top: 0.5vw;
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+    }
+    .slider-wrapper .swiper-pagination-bullet{
+        background: rgb(172, 17, 81);
+        height: 1.5vh;
+        width: 2vw;
+    }
+    .slider-wrapper .swiper-slide-button {
+        color: rgb(172, 17, 81);
+        margin-top: -50px;
+        transition: 0.2s ease;
+    }
+    .slider-wrapper .swiper-slide-button:hover {
+        color: #fff5ee;
+    }
+    #skills{
+        font-size: 1rem;
+    }
+    .skills{
+        font-size: 0.7rem;
+        margin-left: 2vw;
+    }
+    .skillcontainer{
+        width: 50vw;
+        margin-left: 6.5vw;
+        margin-right: 5vw;
+        height: 1vh;
+        .html{
+            height: 0.9vh; 
+        }
+    }
+    .skillcontainer1{
+        width: 50vw;
+        margin-left: 9.5vw;
+        margin-right: 5vw;
+        height: 1vh;
+        .css{
+            height: 0.9vh; 
+        }
+    }
+    .skillcontainer2{
+        width: 50vw;
+        height: 1vh;
+        .js{
+            height: 1vh; 
+        }
+    }
+    .skillcontainer3{
+        width: 50vw;
+        margin-left: 9vw;
+        margin-right: 4vw;
+        height: 1vh;
+        .java{
+            height: 0.9vh; 
+        }
+    }
+    .skillcontainer4{
+        width: 50vw;
+        margin-left: 14vw;
+        margin-right: 4vw;
+        height: 1vh;
+        .c{
+            height: 0.9vh; 
+        }
+    }
+    .skillcontainer5{
+        width: 50vw;
+        margin-left: 10vw;
+        margin-right: 4vw;
+        height: 1vh;
+        .sql{
+            height: 0.9vh; 
+        }
+    }
+    .skill{
+        height: 7vh;
+    }
+    #projects{
+        font-size: 1rem;
+    }
+    .projects{
+        margin-top: 3vh;
+        margin-left: 3vw;
+        .project1{
+            display: block;
+            height: 56vh;
+            width: 70vw;
+            margin-left: 2vw;
+            .psr{
+                height: 30vh;
+                width: 69vw;
+            }
+        }
+        .project1 p{
+            font-size: 0.7rem;
+            margin-left: 0vw;
+            margin-top: 1vh;
+            width: 67vw;
+        }
+        .project2{
+            display: block;
+            height: 50vh;
+            width: 70vw;
+            margin-left: 2vw;
+            .amazon{
+                height: 18vh;
+                width: 69vw;
+            }
+        }
+        .project2 p{
+            font-size: 0.7rem;
+            margin-left: 0vw;
+            margin-top: 1vh;
+            width: 67vw;
+        }
+        .project3{
+            display: block;
+            height: 40vh;
+            width: 70vw;
+            margin-left: 2vw;
+            .chrome{
+                height: 15vh;
+                width: 69vw;
+            }
+        }
+        .project3 p{
+            font-size: 0.7rem;
+            margin-left: 0vw;
+            margin-top: 1vh;
+            width: 67vw;
+        }
+    }
+    .contact{
+        margin-top: 5vh;
+        margin-left: 4vw;
+    }
+    #contact{
+        font-size: 1.2rem; 
+        font-weight: 700;
+    }
+    .contact-link{
+        height: 5vh;
+        width: 65vw;
+        margin-left: 6vw;
+        margin-top: 4vh;
+        margin-bottom: 6vh;
+        font-size: 1.8rem;
+        :hover{
+            color: #fff5ee;
+            transition-duration: .3s;
+        }
+    }
+    footer{
+        height: 20vh;
+        width: 91vw;
+        font-size: 1rem;
+    }
+    .codeimg{
+        height: 6vh;
+        width: 6vw;
+        margin-top: 2vh;
+    }
+}
+@media (min-width: 710px) {
+    .menu{
+        display:none;
+    }
+    .showOnMobile{
+        display: none;
+    }
+    .menu-icon{
+        display: none;
+    }
+    .edu-outer-container{
+        display: none;
+    }
+}
+.two{
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    height: 700px;
+    width: 250px;
+    top: 0px;
+    right: 0px;
+    font-size: 25px;
+    background-color: #fff5ee6f;
+    padding-top: 50px;
+    z-index: 0;
+    backdrop-filter: blur(20px);
+}   
+.two a{
+    margin-top: 20px;
+    border: 2px solid red;
+    
+}
+.menu-icon{
+    height: 50px;
+    width: 40px;
+    border: 2px solid red;
+    margin-right: 10px;
+    div {
+        width: 35px;
+        height: 5px;
+        background-color: black;
+        margin: 6px 0;
+      }
 }

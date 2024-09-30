@@ -1,68 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <!-- linking SwiperJS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
+    <div class="bg-image"></div>
     <header>
         <div class="head">
-            <div class="name"><h1>Raghavendra R Sheregar</h1></div>
-                <div class="one">
-                  <a href="#" >Home</a>
-                  <a href="#about">About</a>
-                  <a href="#education">Education</a>
-                  <a href="#skills">Skills</a>
-                  <a href="#projects">Project</a>
-                  <a href="#contact">Contact</a>
+            <div class="name">
+                <p>Raghavendra R Sheregar</p>
+            </div>
+            <div class="one">
+                <a class="hideOnMobile" href="#">Home</a>
+                <a class="hideOnMobile" href="#about">About</a>
+                <a class="hideOnMobile" href="#education">Education</a>
+                <a class="hideOnMobile" href="#skills">Skills</a>
+                <a class="hideOnMobile" href="#projects">Project</a>
+                <a class="hideOnMobile" href="#contact">Contact</a>
+            </div>
+            <div class="menu-icon">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="menu">
+                <div class="two">
+                    <a class="showOnMobile" href="#">Home</a>
+                    <a class="showOnMobile" href="#about">About</a>
+                    <a class="showOnMobile" href="#education">Education</a>
+                    <a class="showOnMobile" href="#skills">Skills</a>
+                    <a class="showOnMobile" href="#projects">Project</a>
+                    <a class="showOnMobile" href="#contact">Contact</a>
                 </div>
+            </div>
         </div>
     </header>
     <div class="container">
         <div class="content">
-          <pre>Hi Their,
+            <pre>Hi Their,
 Im Raghavendra R Sheregar</pre>
         </div>
         <div class="web">
             <div class="web1">
-                <div class="web2">I am a <span class="auto-type" style="color: rgb(172, 17, 81);margin-left: 10px;">Web Developer</span></div>   
+                <div class="web2">I am a <span class="auto-type" style="color: rgb(172, 17, 81);margin-left: 10px;">Web
+                        Developer</span></div>
             </div>
-            </div>
+        </div>
         <button><a href="#about">About me &#11147;</a></button>
         <div class="link">
-            <a href="https://www.linkedin.com/in/raghavendra-r-sheregar-b43a71236?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa fa-linkedin-square"></i></a>
+            <a
+                href="https://www.linkedin.com/in/raghavendra-r-sheregar-b43a71236?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                    class="fa fa-linkedin-square"></i></a>
             <a href="https://github.com/Raghurs06"><i class="fa fa-github"></i></a>
             <a href="mailto:raghursheregar@gmail.com"><i class="fa fa-envelope"></i></a>
-            <a href="https://wa.me/+918970524103" target="_blank"><i class="fa fa-whatsapp" style="font-size:48px;color:black"></i></a>
+            <a href="https://wa.me/+918970524103" target="_blank"><i class="fa fa-whatsapp"></i></a>
             <a href="https://www.instagram.com/_raghu_r_s_?igsh=MWlsNzliMHZpNHBm"><i class="fa fa-instagram"></i></a>
-        </div>  
+        </div>
+        <!-- style="font-size:48px;color:black" -->
     </div>
     <div class="image"></div>
     <div class="image1"></div>
 
-<section>
-    <div class="about">
-        <div class="h1"><h1 id="about">About Me</h1></div>
-        <p>I am a recent graduate in Electronics and Communication Engineering (ECE) with a strong
-        foundation in Java and front-end technologies. My passion for technology drives me to
-        continuously learn and innovate. I enjoy creating efficient and user-friendly web 
-        solutions, combining my technical skills with a keen eye for design. I have hands-on
-        experience with HTML, CSS, and JavaScript, and I'm always eager to take on new challenges
-        that allow me to grow and contribute to impactful projects.</p>
-    </div>
-</section>
-        <h1 id="education">Education</h1>
-        <div class="education">
+    <section>
+        <div class="about">
+            <div class="h1">
+                <p id="about">About Me</p>
+            </div>
+            <p>I am a recent graduate in Electronics and Communication Engineering (ECE) with a strong
+                foundation in Java and front-end technologies. My passion for technology drives me to
+                continuously learn and innovate. I enjoy creating efficient and user-friendly web
+                solutions, combining my technical skills with a keen eye for design. I have hands-on
+                experience with HTML, CSS, and JavaScript, and I'm always eager to take on new challenges
+                that allow me to grow and contribute to impactful projects.</p>
+        </div>
+    </section>
+    <p id="education">Education</p>
+    <div class="education-container">
         <div class="education-box">
-            <div class="school"></div>
-            <p>Name: Rotary English Medium High School.</p>
-            <p>Ranebennur</p>
-            <p style="margin-bottom: 15px;">SSLC: 65%</p>
-            <br>
-            <button><a href="https://en.wikipedia.org/wiki/Rotary_English_Medium_School,_Ranibennur">Read More</a></button>
+            <div class="card-list">
+                <div class="card-item">
+                    <div class="school"></div>
+                    <p>Name: Rotary English Medium High School.</p>
+                    <p>Ranebennur</p>
+                    <p style="margin-bottom: 15px;">SSLC: 65%</p>
+                    <br>
+                    <button><a href="https://en.wikipedia.org/wiki/Rotary_English_Medium_School,_Ranibennur">Read
+                            More</a></button>
+                </div>
+            </div>
         </div>
         <div class="education-box">
             <div class="puc"></div>
@@ -70,104 +103,173 @@ Im Raghavendra R Sheregar</pre>
             <p>Ranebennur</p>
             <p>PUC: 71%</p>
             <p style="margin-bottom:15px;">2018-2020</p>
-            <button><a href="https://schools.org.in/haveri/29111414313/rotary-p-u-col-ranebennur.html">Read More</a></button>
+            <button><a href="https://schools.org.in/haveri/29111414313/rotary-p-u-col-ranebennur.html">Read
+                    More</a></button>
         </div>
         <div class="education-box">
             <div class="college"></div>
             <p>Name: Sri Taralabalu Jagadguru Institute of Technology, Ranebennur</p>
             <p>CGPA: 7.19</p>
             <p>2020-2024</p>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <button><a href="https://www.stjit.ac.in/index.html">Read More</a></button>
+            <button id="college"><a href="https://www.stjit.ac.in/index.html">Read More</a></button>
         </div>
     </div>
-<section>
-    <p id="skills">Skills</p>
-    <div class="skills">
-        <div class="skill">
-            <p>HTML</p>
-            <div class="skillcontainer"><div class="html"></div></div>
-            <div class="skillperc"><p>80%</p></div>
-        </div>
-        <div class="skill">
-            <p>CSS</p>
-            <div class="skillcontainer1"><div class="css"></div></div>
-            <div class="skillperc">70%</div>
-        </div>
-        <div class="skill">
-            <p>JavaScript</p>
-            <div class="skillcontainer2"><div class="js"></div></div>
-            <div class="skillperc" style="margin-right: 30px;">50%</div>
-        </div>
-        <div class="skill">
-            <p>Java</p>
-            <div class="skillcontainer3"><div class="java"></div></div>
-            <div class="skillperc">60%</div>
-        </div>
-        <div class="skill">
-            <p>C</p>
-            <div class="skillcontainer4"><div class="c"></div></div>
-            <div class="skillperc">60%</div>
-        </div>
-        <div class="skill">
-            <p>SQL</p>
-            <div class="skillcontainer5"><div class="sql"></div></div>
-            <div class="skillperc">70%</div>
-        </div>
-    </div>
-</section>
-<section>
-    <div class="projects">
-        <h1 id="projects" style="font-weight: 900; font-size: 30px;">Projects</h1>
-        <div class="project1">
-            <div class="psr"></div>
-            <p>POLICE SURVEILLANCE ROBOT USING IoT <br>(<a href="https://www.kscst.org.in/spp.html" target="_blank" style="color: rgb(172, 17, 81);">SPONSORED BY KSCST</a>): <br>
-                <br>
-               Developed a Robot to surveillance the public places and ensure the safety of the public. Deploying the robot in the hazardous places where it impossible for an human officers to involve directly like chemical explosion in the factories, Remote areas etc.
-               Used IoT Technology for the project to control the Robot remotely.
-            </p>
-        </div>
-        <div class="project2">
-            <div class="amazon"></div>
-            <p>Amazon e-commerce Website: <br>
-                <br>
-                Developed a fully responsive Amazon clone using HTML and CSS, replicating the core features of the Amazon homepage. Optimized for various screen sizes, ensuring a consistent user experience across devices. Mimicked Amazon’s user interface, including a header with search and cart functionality, product listings, and a footer with links. Ensured the website functions correctly on multiple web browsers.
-                <br>
-                <br>
-                <a href="https://raghurs06.github.io/amazonclone/" target="_blank" style="color: rgb(172, 17, 81);">GitHub Link</a></p>
-        </div>
-        <div class="project3">
-            <div class="chrome"></div>
-            <p>Chrome Home Page Clone <br>
-            <br>
-            developed a fully responsive clone of the Google Chrome home page using HTML and CSS. This project showcases my ability to accurately recreate a modern, minimalist web design while maintaining cross-browser compatibility and responsiveness.
-            <br>
-            <br>
-            <a href="https://raghurs06.github.io/google-clone/" target="_blank" style="color: rgb(172, 17, 81);">GitHub Link</a></p>
+    <!-- for mobile slide -->
+    <div class="edu-outer-container">
+        <div class="edu-container swiper">
+            <div class="slider-wrapper">
+                <div class="card-list swiper-wrapper">
+                    <div class="card-item swiper-slide">
+                        <img src="schoolphoto1.png" alt="school-image" class="school-image">
+                        <p>Name: Rotary English Medium High School.</p>
+                        <p>Ranebennur</p>
+                        <p style="margin-bottom: 15px;">SSLC: 65%</p>
+                        <br>
+                        <button><a href="https://en.wikipedia.org/wiki/Rotary_English_Medium_School,_Ranibennur">Read More</a></button>
+                    </div>
+    
+                    <div class="card-item swiper-slide">
+                        <img src="puc.jpg" alt="school-image" class="school-image">
+                        <p>Name: Rotary Pre-University College.</p>
+                        <p>Ranebennur</p>
+                        <p style="margin-bottom: 15px;">PUC: 71%</p>
+                        <br>
+                        <button><a href="https://en.wikipedia.org/wiki/Rotary_English_Medium_School,_Ranibennur">Read More</a></button>
+                    </div>
+    
+                    <div class="card-item swiper-slide">
+                        <img src="college2.jpg" alt="school-image" class="school-image">
+                        <p>Name: S T J Institute of Technology.</p>
+                        <p>Ranebennur</p>
+                        <p style="margin-bottom: 15px;">B.E: 7.19</p>
+                        <br>
+                        <button><a href="https://en.wikipedia.org/wiki/Rotary_English_Medium_School,_Ranibennur">Read More</a></button>
+                    </div>
+                </div>
+    
+                <div class="swiper-pagination"></div>
+                <div class="swiper-slide-button swiper-button-prev"></div>
+                <div class="swiper-slide-button swiper-button-next"></div>
+            </div>
         </div>
     </div>
-</section>
-<section>
-    <div class="contact">
-        <h1 id="contact" style="font-size: 35px; font-weight: 700;">Contact</h1>
-        <div class="contact-link">
-            <a href="https://www.linkedin.com/in/raghavendra-r-sheregar-b43a71236?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fa fa-linkedin-square"></i></a>
-            <a href="https://github.com/Raghurs06" target="_blank"><i class="fa fa-github"></i></a>
-            <a href="mailto:raghursheregar@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
-            <a href="https://wa.me/+918970524103" target="_blank"><i class="fa fa-whatsapp" style="font-size:48px;"></i></a>
-            <a href="https://www.instagram.com/_raghu_r_s_?igsh=MWlsNzliMHZpNHBm" target="_blank"><i class="fa fa-instagram"></i></a>
-        </div>  
-    </div>
-</section>
-<footer>
-    <div class="code">
-        <p>Made With Love and Code</></p>
-    </div>
-    <div class="codeimg"></div>
-</footer>
+    <section>
+        <p id="skills">Skills</p>
+        <div class="skills">
+            <div class="skill">
+                <p>HTML</p>
+                <div class="skillcontainer">
+                    <div class="html"></div>
+                </div>
+                <div class="skillperc">
+                    <p>80%</p>
+                </div>
+            </div>
+            <div class="skill">
+                <p>CSS</p>
+                <div class="skillcontainer1">
+                    <div class="css"></div>
+                </div>
+                <div class="skillperc">70%</div>
+            </div>
+            <div class="skill">
+                <p>JavaScript</p>
+                <div class="skillcontainer2">
+                    <div class="js"></div>
+                </div>
+                <div class="skillperc" style="margin-right: 30px;">50%</div>
+            </div>
+            <div class="skill">
+                <p>Java</p>
+                <div class="skillcontainer3">
+                    <div class="java"></div>
+                </div>
+                <div class="skillperc">60%</div>
+            </div>
+            <div class="skill">
+                <p>C</p>
+                <div class="skillcontainer4">
+                    <div class="c"></div>
+                </div>
+                <div class="skillperc">60%</div>
+            </div>
+            <div class="skill">
+                <p>SQL</p>
+                <div class="skillcontainer5">
+                    <div class="sql"></div>
+                </div>
+                <div class="skillperc">70%</div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="projects">
+            <p id="projects">Projects</p>
+            <div class="project1">
+                <div class="psr"></div>
+                <p>POLICE SURVEILLANCE ROBOT USING IoT <br>(<a href="https://www.kscst.org.in/spp.html" target="_blank"
+                        style="color: rgb(172, 17, 81);">SPONSORED BY KSCST</a>): <br>
+                    <br>
+                    Developed a Robot to surveillance the public places and ensure the safety of the public. Deploying
+                    the robot in the hazardous places where it impossible for an human officers to involve directly like
+                    chemical explosion in the factories, Remote areas etc.
+                    Used IoT Technology for the project to control the Robot remotely.
+                </p>
+            </div>
+            <div class="project2">
+                <div class="amazon"></div>
+                <p>Amazon e-commerce Website: <br>
+                    <br>
+                    Developed a fully responsive Amazon clone using HTML and CSS, replicating the core features of the
+                    Amazon homepage. Optimized for various screen sizes, ensuring a consistent user experience across
+                    devices. Mimicked Amazon’s user interface, including a header with search and cart functionality,
+                    product listings, and a footer with links. Ensured the website functions correctly on multiple web
+                    browsers.
+                    <br>
+                    <br>
+                    <a href="https://raghurs06.github.io/amazonclone/" target="_blank"
+                        style="color: rgb(172, 17, 81);">GitHub Link</a>
+                </p>
+            </div>
+            <div class="project3">
+                <div class="chrome"></div>
+                <p>Chrome Home Page Clone <br>
+                    <br>
+                    developed a fully responsive clone of the Google Chrome home page using HTML and CSS. This project
+                    showcases my ability to accurately recreate a modern, minimalist web design while maintaining
+                    cross-browser compatibility and responsiveness.
+                    <br>
+                    <br>
+                    <a href="https://raghurs06.github.io/google-clone/" target="_blank"
+                        style="color: rgb(172, 17, 81);">GitHub Link</a>
+                </p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="contact">
+            <p id="contact">Contact</p>
+            <div class="contact-link">
+                <a href="https://www.linkedin.com/in/raghavendra-r-sheregar-b43a71236?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    target="_blank"><i class="fa fa-linkedin-square"></i></a>
+                <a href="https://github.com/Raghurs06" target="_blank"><i class="fa fa-github"></i></a>
+                <a href="mailto:raghursheregar@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
+                <a href="https://wa.me/+918970524103" target="_blank"><i class="fa fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/_raghu_r_s_?igsh=MWlsNzliMHZpNHBm" target="_blank"><i
+                        class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- Linking SwiperJS Script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- linking custom script -->
+    <script src="script.js"></script>
+    <footer>
+        <div class="code">
+            <p>Made With Love and Code</p>
+        </div>
+        <div class="codeimg"></div>
+    </footer>
 </body>
+
 </html>
