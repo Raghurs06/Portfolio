@@ -483,13 +483,11 @@ footer{
     .container{
         margin-top: 48vh;
         height: 24vh;
-        border: 2px solid red;
         width: 88vw;
     }
     .content{
         margin-top: 0vh;
         font-size: 1rem;
-        border: 2px solid red;
     }
     .web2{
         font-size: 1rem;
@@ -506,7 +504,6 @@ footer{
         margin-top: 0vh;
     }
     .image{
-        border: 2px solid red;
         top: 35vh;
         left: 13vw;
         height: 13vh;
@@ -515,7 +512,6 @@ footer{
         background-repeat: no-repeat;
     }
     .image1{
-        border: 2px solid red;
         left: 20vw;
         height: 40vh;
         top: 0vh;
@@ -527,7 +523,6 @@ footer{
     .about{
         margin-top: 0vh;
         width: 90vw;
-        border: 2px solid red;
     }
     .about p{
         margin-top: 0vh;
@@ -763,13 +758,11 @@ footer{
 }   
 .two a{
     margin-top: 20px;
-    border: 2px solid red;
     
 }
 .menu-icon{
     height: 50px;
     width: 40px;
-    border: 2px solid red;
     margin-right: 10px;
     div {
         width: 35px;
