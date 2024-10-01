@@ -652,7 +652,7 @@ footer{
             display: block;
             height: 56vh;
             width: 70vw;
-            margin-left: 2vw;
+            margin-left: 11vw;
             .psr{
                 height: 30vh;
                 width: 69vw;
@@ -668,7 +668,7 @@ footer{
             display: block;
             height: 50vh;
             width: 70vw;
-            margin-left: 2vw;
+            margin-left: 11vw;
             .amazon{
                 height: 18vh;
                 width: 69vw;
@@ -684,7 +684,7 @@ footer{
             display: block;
             height: 40vh;
             width: 70vw;
-            margin-left: 2vw;
+            margin-left: 11vw;
             .chrome{
                 height: 15vh;
                 width: 69vw;
@@ -699,7 +699,7 @@ footer{
     }
     .contact{
         margin-top: 5vh;
-        margin-left: 4vw;
+        margin-left:2vw;
     }
     #contact{
         font-size: 1.2rem; 
@@ -708,7 +708,7 @@ footer{
     .contact-link{
         height: 5vh;
         width: 65vw;
-        margin-left: 6vw;
+        margin-left: 15vw;
         margin-top: 4vh;
         margin-bottom: 6vh;
         font-size: 1.8rem;
@@ -719,7 +719,7 @@ footer{
     }
     footer{
         height: 20vh;
-        width: 91vw;
+        width: 100%;
         font-size: 1rem;
     }
     .codeimg{
